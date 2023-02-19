@@ -8,6 +8,19 @@ const AllocationForm = (props) => {
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
 
+    function validateNumberField (myNumber) {
+        return myNumber <= remaining;
+      };
+
+    const validateCost = (val) => {
+        const isValid = validateNumberField(val);
+        console.log("isValid: " + isValid)
+        console.log("value: " + val)
+        console.log("remaining: " + remaining)
+        console.log("")
+        alert(isValid)
+    }
+
     const submitEvent = () => {
 
             if(cost > remaining) {
