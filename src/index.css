@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#dropdown-custom-1 {
+    background-color: #a5e2a0;
+    color: white;
+}
+
+.dropdown-menu.show {
+    background-color: #a5e2a0;
+    color: black;
+    border: 1px solid black;  
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color:white !important;
+}
